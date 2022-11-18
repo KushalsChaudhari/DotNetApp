@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculate SimpleInterest</h2>
+
+<form method="post" action="/ServiceInterest/CalculateSI">
+
+  <label for="fname">Principle:</label><br>
+  <input type="text" value="Principle" required="required"><br>
+
+  <label for="lname">Period:</label><br>
+  <input type="text" value="Period"  required="required"><br><br>
+
+  <label for="lname">Rate:</label><br>
+  <input type="text" value="Rate"  required="required"><br><br>
+
+  <input type="submit" value="Get SI">
+</form> 
+
+<h3> Simple Interest: @ViewBag.SI</h3>
+
+<p>If you click the "Submit" button, You Will Get SimpleInterest".</p>
+
+</body>
+</html>

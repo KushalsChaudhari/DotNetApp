@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+  background-color: linen;
+  text-align: center;
+}
+h2 {
+  color: darkblue;
+  margin-left: 40px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+label{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+p{
+  font-family: cursive;
+}
+input{
+  background-color: lavender;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+<h2>Calculate SimpleInterest</h2>
+<i class="fa fa-calculator" style="font-size:40px"></i><br><br>
+<form method="post" action="/Interest/CalculateSI">
+  <label >Principle:</label><br>
+  <input type="text" value="" name="p" required="required"><br><br>
+  <label >Period:</label><br>
+  <input type="text" value="" name="n" required="required"><br><br>
+  <label >Rate:</label><br>
+  <input type="text" value="" name="r"  required="required"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click the "Submit" button, For Simple Interest".</p>
+<h2>@ViewBag.SI</h2>
+</body>
+</html>
